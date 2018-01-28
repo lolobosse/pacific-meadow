@@ -9,7 +9,7 @@
 
 ## Installing
 
-First, login on heroku : '''$ heroku login'''
+First, login on heroku : ```$ heroku login```
 Then, clone this git repository : '''$ git clone xxx'''
 '''$ cd python-getting-started'''
 Create an app in your Heroku account : '''$ heroku create'''
