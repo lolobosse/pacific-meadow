@@ -5,6 +5,7 @@ Django==2.0.1
 django-block-ip==0.2.0
 django-heroku==0.2.0
 flake8==3.5.0
+gunicorn==19.7.1
 idna==2.6
 ipcalc==1.99.0
 mccabe==0.6.1
