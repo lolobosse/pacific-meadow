@@ -19,7 +19,7 @@ def form(request):
         name = form.cleaned_data['name']
         email = form.cleaned_data['email']
         try:
-            send_mail('Fially I achieved this optionnal feature :)',
+            send_mail('I finally achieved this optionnal feature :)',
             'Hey! (This automatic mail use Mailjet as a SMTP relay)',
             'alexis.aigue06@gmail.com',
             [email],
