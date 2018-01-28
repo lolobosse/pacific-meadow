@@ -10,11 +10,11 @@
 ## Installing
 
 First, login on heroku : ```$ heroku login```
-Then, clone this git repository : '''$ git clone xxx'''
-'''$ cd python-getting-started'''
-Create an app in your Heroku account : '''$ heroku create'''
-then deploy the code : '''$ git push heroku master'''
-Active at least one dyno : '''$ heroku ps:scale web=1'''
+Then, clone this git repository : ```$ git clone xxx```
+```$ cd python-getting-started```
+Create an app in your Heroku account : ```$ heroku create```
+then deploy the code : ```$ git push heroku master```
+Active at least one dyno : ```$ heroku ps:scale web=1```
 
 ## Built With
 
