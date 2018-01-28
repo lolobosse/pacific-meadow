@@ -1,15 +1,24 @@
-# Python: Getting Started
+# pacific-meadow
 
-A barebones Django app, which can easily be deployed to Heroku.
+A Django app, which can easily be deployed to Heroku.
 
 This application supports the [Getting Started with Python on Heroku](https://devcenter.heroku.com/articles/getting-started-with-python) article - check it out.
+
+**/
+## Prerequisites
+
+* Heroku account and Heroku CLI
+* Python 3.6 installed locally
+* Pipenv installed locally
+* Postgres installed locally
+/**
 
 ## Running Locally
 
 Make sure you have Python [installed properly](http://install.python-guide.org). Also, install the [Heroku CLI](https://devcenter.heroku.com/articles/heroku-cli) and [Postgres](https://devcenter.heroku.com/articles/heroku-postgresql#local-setup).
 
 ```sh
-$ git clone git@github.com:heroku/python-getting-started.git
+$ git clone https://github.com/AlexisClone/pacific-meadow.git
 $ cd python-getting-started
 
 $ pipenv install
@@ -43,14 +52,6 @@ For more information about using Python on Heroku, see these Dev Center articles
 
 - [Python on Heroku](https://devcenter.heroku.com/categories/python)
 
-# pacific-meadow
-
-## Prerequisites
-
-* Heroku account and Heroku CLI
-* Python 3.6 installed locally
-* Pipenv installed locally
-* Postgres installed locally
 
 ## Installing
 
