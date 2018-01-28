@@ -1,10 +1,39 @@
 {% extends "base.html" %}
-{% load staticfiles %}
 
 {% block content %}
 
-<form>
-  <input type="button">Ouiii !!!</input>
-</form>
+  <div class="text-center p-2">
+    <h1>This form is amazing!</h1>
+  </div>
+
+  <div class="col-10 offset-1 bg-blue p-5">
+
+    <form action="/form" method="post">
+      <div class="form-group row">
+        {% csrf_token %}
+        <label for="name" class="col-2 offset-1 align-middle text-right text-light pr-3">Name</label>
+        <div class="col-8 text-right">
+          {{ form.name }}
+        </div>
+        <label for="email" class="col-2 offset-1 align-middle text-right text-light pr-3">Email</label>
+        <div class="col-8">
+          {{ form.email }}
+        </div>
+        <div class="w-100">
+        <div class="text-center mx-auto p-2">
+          <input type="submit" value="Submit" />
+        </div>
+      </div>
+    </form>
+
+    {% if form.errors %}
+    <div class="alert alert-danger col-6 offset-3" role="alert">
+      {% for field in form %}
+        {{ field.errors }}
+      {% endfor %}
+    </div>
+    {% endif %}
+  </div>
+</div>
 
 {% endblock %}

@@ -116,6 +116,13 @@ USE_L10N = True
 
 USE_TZ = True
 
+# Emailing
+EMAIL_HOST = 'in-v3.mailjet.com'
+EMAIL_HOST_USER = '1672997316d2ace66efd42d648dac9d5'
+EMAIL_HOST_PASSWORD = 'b4c27132582c0a067b18d55ec52e68bc'
+EMAIL_PORT = 587
+EMAIL_USE_TLS = False
+
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/2.0/howto/static-files/
