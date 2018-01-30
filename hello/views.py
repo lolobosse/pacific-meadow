@@ -9,7 +9,7 @@ from .forms import Contact
 
 
 def index(request):
-    return render(request, 'myIndex.html')
+    return render(request, 'index.html')
 
 def form(request):
 
@@ -29,7 +29,7 @@ def form(request):
 
         return render(request, 'resultForm.html', locals())
 
-    return render(request, 'myForm.html', locals())
+    return render(request, 'form.html', locals())
 
 def more(request):
     return render(request, "more.html")
