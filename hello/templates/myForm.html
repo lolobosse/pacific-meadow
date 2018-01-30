@@ -6,22 +6,22 @@
     <h1>This form is amazing!</h1>
   </div>
 
-  <div class="col-10 offset-1 bg-blue p-5">
+  <div class="col-10 offset-1 bg-blue p-md-5 p-3">
 
     <form action="/form" method="post">
       <div class="form-group row">
         {% csrf_token %}
-        <label for="name" class="col-2 offset-1 align-middle text-right text-light pr-3">Name</label>
-        <div class="col-8 text-right">
+        <label for="name" class="col-md-1 offset-md-1 col-12 align-middle text-light pr-3">Name</label>
+        <div class="col-md-9 mb-2 col-12">
           {{ form.name }}
         </div>
-        <label for="email" class="col-2 offset-1 align-middle text-right text-light pr-3">Email</label>
-        <div class="col-8">
+        <label for="email" class="col-md-1 offset-md-1 col-12 align-middle text-light pr-3">Email</label>
+        <div class="col-md-9 col-12">
           {{ form.email }}
         </div>
         <div class="w-100">
         <div class="text-center mx-auto p-2">
-          <input type="submit" value="Submit" />
+          <input class="btn btn-light" type="submit" value="Submit" />
         </div>
       </div>
     </form>
