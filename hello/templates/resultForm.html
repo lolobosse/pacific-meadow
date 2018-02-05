@@ -3,9 +3,9 @@
 {% block content %}
 
   <div class="bg-blue text-light m-5 p-5">
-    <p class="text-center">Bonjour Maitre <strong>{{ name }}</strong>, je vous contacterais à l’adresse convenue <strong>{{ email }}</strong></p>
+    <p class="text-center">Bonjour Maitre <strong>{{ name }}</strong>, je vous contacterai à l’adresse convenue <strong>{{ email }}</strong></p>
     {% if not error %}
-      <p class="text-left">PS : I send you an email</p>
+      <p class="text-left">PS : I sent you an email</p>
     {% else %}
       <p class="text-left">{{ error }}</p>
     {% endif %}

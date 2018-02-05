@@ -2,38 +2,42 @@
 
 {% block content %}
 
-  <div class="text-center p-2">
-    <h1>This form is amazing!</h1>
-  </div>
-
-  <div class="col-10 offset-1 bg-blue p-md-5 p-3">
-
-    <form action="/form" method="post">
-      <div class="form-group row">
-        {% csrf_token %}
-        <label for="name" class="col-md-1 offset-md-1 col-12 align-middle text-light pr-3">Name</label>
-        <div class="col-md-9 mb-2 col-12">
-          {{ form.name }}
-        </div>
-        <label for="email" class="col-md-1 offset-md-1 col-12 align-middle text-light pr-3">Email</label>
-        <div class="col-md-9 col-12">
-          {{ form.email }}
-        </div>
-        <div class="w-100">
-        <div class="text-center mx-auto mt-3">
-          <input class="btn btn-light" type="submit" value="Submit" />
-        </div>
-      </div>
-    </form>
-
-    {% if form.errors %}
-    <div class="alert alert-danger col-6 offset-3" role="alert">
-      {% for field in form %}
-        {{ field.errors }}
-      {% endfor %}
+    <div class="text-center p-2">
+        <h1>This form is amazing!</h1>
     </div>
-    {% endif %}
-  </div>
-</div>
+
+    {# You fucked up the div closing#}
+
+    <div class="col-10 offset-1 bg-blue p-md-5 p-3">
+
+        {# Very bad idea to hardcode routes into template#}
+        <form action="/form" method="post">
+            <div class="form-group row">
+                {# Do you know what is a csrf token?#}
+                {% csrf_token %}
+                <label for="name" class="col-md-1 offset-md-1 col-12 align-middle text-light pr-3">Name</label>
+                <div class="col-md-9 mb-2 col-12">
+                    {{ form.name }}
+                </div>
+                <label for="email" class="col-md-1 offset-md-1 col-12 align-middle text-light pr-3">Email</label>
+                <div class="col-md-9 col-12">
+                    {{ form.email }}
+                </div>
+                <div class="w-100">
+                    <div class="text-center mx-auto mt-3">
+                        <input class="btn btn-light" type="submit" value="Submit"/>
+                    </div>
+                </div>
+            </div>
+        </form>
+
+        {% if form.errors %}
+            <div class="alert alert-danger col-6 offset-3" role="alert">
+                {% for field in form %}
+                    {{ field.errors }}
+                {% endfor %}
+            </div>
+        {% endif %}
+    </div>
 
 {% endblock %}

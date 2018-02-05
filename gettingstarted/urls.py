@@ -7,6 +7,8 @@ admin.autodiscover()
 import hello.views
 
 
+# Dafuq is that?
+
 urlpatterns = [
     url(r'^$', hello.views.index, name='index'),
     url(r'^db', hello.views.db, name='db'),

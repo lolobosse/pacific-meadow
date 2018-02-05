@@ -45,3 +45,28 @@ For more information about using Python on Heroku, see these Dev Center articles
 ## Authors
 
 * **Alexis**
+
+
+# Notes
+
+ - Using a template for such projects is smart:
+    * Pros:
+        * You get done faster
+        * You can focus on the code part
+        * You deploy relatively simply
+    * Cons
+        * I bet that you have no idea of what decides what.
+        * You do not really know what you're using and more importantly why you're using that.
+   
+ - Flask is waaaay simpler:
+ ```python
+ # That's an app in Flask
+from flask import Flask
+app = Flask(__name__)
+
+@app.route("/")
+def hello():
+    return "Hello World!"
+ ```
+ - I was able to run it, which is a good point
+ - Never used `Pipenv` before, I'm used to virtualenv but why not?

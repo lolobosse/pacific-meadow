@@ -32,6 +32,9 @@ ALLOWED_HOSTS = []
 
 # Application definition
 
+# Could it be even more complicated?
+# It might be that you know what all that is doing but I don't and if you're on the team, you need to explain to others.
+# So please comment EVERY line (you'll see you'll learn a few).
 INSTALLED_APPS = [
     'django.contrib.admin',
     'django.contrib.auth',
@@ -76,6 +79,8 @@ WSGI_APPLICATION = 'gettingstarted.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/2.0/ref/settings/#databases
 
+# Problem of templates: do you need a db for a static website?
+
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
@@ -117,6 +122,9 @@ USE_L10N = True
 USE_TZ = True
 
 # Emailing
+
+# Clear text password. Very Smart :D
+
 EMAIL_HOST = 'in-v3.mailjet.com'
 EMAIL_HOST_USER = '1672997316d2ace66efd42d648dac9d5'
 EMAIL_HOST_PASSWORD = 'b4c27132582c0a067b18d55ec52e68bc'

@@ -3,41 +3,45 @@
 
 {% block content %}
 
-  <div class="text-center p-2">
-    <h1>Welcome <i class="fas fa-hand-spock"></i></h1>
-  </div>
-
-  <div class="text-center col-10 offset-1 p-md-5 p-2 bg-blue">
-    <img class="img-fluid" src="{% static 'chaton.jpg' %}" >
-    <p>Just because <strong>everyone</strong> loves cats. Right? :)</p>
-  </div>
-
-<div class="container-fluid mt-5">
-  <div class="text-center mb-5">
-    <h2>About this exercice</h2>
-  </div>
-
-  <div class="col-10 offset-1 row">
-    <div class="card col-10 offset-1 col-sm-4 offset-sm-1 p-2 text-center">
-      <img class="card-img-top mx-auto" src="{% static 'meme-echelle.jpg' %}" alt="meme-echelle">
-      <div class="card-body">
-        <p class="card-text">When I saw the exercice's requirements...</p>
-      </div>
+    <div class="text-center p-2">
+        <h1>Welcome <i class="fas fa-hand-spock"></i></h1>
     </div>
 
-    <div class="card col-10 offset-1 col-sm-4 offset-sm-2 p-2 text-center">
-      <img class="card-img-top mx-auto" src="{% static 'coffee-business-cat.jpg' %}" alt="coffee-business-cat">
-      <div class="card-body">
-        <p class="card-text">Here we go :)</p>
-      </div>
+    <div class="text-center col-10 offset-1 p-md-5 p-2 bg-blue">
+        <img class="img-fluid" src="{% static 'chaton.jpg' %}">
+        <p>Just because <strong>everyone</strong> loves cats. Right? :)</p>
     </div>
-  </div>
 
-  <div class="mx-auto my-2 w-75">
-    <p>This exercice required knowledges I hadn't (as server-side developement (I only worked with PHP scripts)).
-    </br>It was really interesting, and it gave me an overview of how a cloud application works. So, thank you.
-  </br>PS : I like cats, but you know... not that much (I don't want to look like a crazy man)</p>
-  </div>
-</div>
+    <div class="container-fluid mt-5">
+        <div class="text-center mb-5">
+            <h2>About this exercise</h2>
+        </div>
+
+        <div class="col-10 offset-1 row">
+            <div class="card col-10 offset-1 col-sm-4 offset-sm-1 p-2 text-center">
+                {# Good practice with alt#}
+                <img class="card-img-top mx-auto" src="{% static 'meme-echelle.jpg' %}" alt="meme-echelle">
+                <div class="card-body">
+                    <p class="card-text">When I saw the exercice's requirements...</p>
+                </div>
+            </div>
+
+            <div class="card col-10 offset-1 col-sm-4 offset-sm-2 p-2 text-center">
+                <img class="card-img-top mx-auto" src="{% static 'coffee-business-cat.jpg' %}"
+                     alt="coffee-business-cat">
+                <div class="card-body">
+                    <p class="card-text">Here we go :)</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="mx-auto my-2 w-75">
+            <p>This exercice required knowledges I hadn't (as server-side development (I only worked with PHP
+                scripts)).</p>
+            <p>It was really interesting, and it gave me an overview of how a cloud application works. So, thank
+                you.</p>
+            <p>PS : I like cats, but you know... not that much (I don't want to look like a crazy man)</p>
+        </div>
+    </div>
 
 {% endblock %}

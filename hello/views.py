@@ -1,11 +1,8 @@
-import requests
-
-from django.shortcuts import render
-from django.http import HttpResponse
 from django.core.mail import send_mail
+from django.shortcuts import render
 
-from .models import Greeting
 from .forms import Contact
+from .models import Greeting
 
 
 def index(request):
@@ -13,6 +10,7 @@ def index(request):
 
 def form(request):
 
+    # Good abstraction but form is a django word and you shadow another variable
     form = Contact(request.POST or None)
 
     if form.is_valid():
@@ -34,6 +32,7 @@ def form(request):
 def more(request):
     return render(request, "more.html")
 
+# You do not need that
 def db(request):
 
     greeting = Greeting()
